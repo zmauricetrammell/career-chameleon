@@ -1,0 +1,16 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.py[cod]
+*.log
+logs/
+
+# Generated artifacts
+*.docx
+*.pdf
+
+# Personal/runtime data
+resume_system/experience_corpus/
+tests/

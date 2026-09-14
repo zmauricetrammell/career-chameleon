@@ -1,0 +1,1108 @@
+# Writer Task Instruction — Draft Resume Content
+
+## Task
+
+Use the supplied `CandidateJobAnalysis` to produce exactly one schema-conformant:
+
+`ResumeContentManifest`
+
+The purpose of this artifact is to provide polished dynamic resume content for the Python renderer.
+
+The Writer owns:
+
+- Professional summary.
+- Core skills.
+- Selected experience titles.
+- Experience descriptions.
+- Achievement bullets.
+- Relevant certifications.
+
+The Writer does not:
+
+- Search for evidence.
+- Conduct interviews.
+- Re-analyze the job.
+- Invent candidate facts.
+- Render or format the document.
+- Change static employers, locations, dates, education, identity, or contact information.
+
+## Source Authority
+
+The `CandidateJobAnalysis` is the Writer's authoritative source for:
+
+- Target role priorities.
+- Candidate fit.
+- Authorized professional evidence.
+- Strongest accomplishments.
+- Narrative guidance.
+- Skills to surface.
+- Certifications to surface.
+- Claim boundaries.
+- Material gaps.
+- Presentation strategy.
+
+Do not use candidate facts from model memory or from the target job description alone.
+
+Employer requirements do not become candidate capabilities unless the Candidate Job Analysis establishes them.
+
+## Core Writing Objective
+
+Create the strongest truthful resume content possible by:
+
+- Prioritizing the most relevant authorized evidence.
+- Making candidate ownership and scope clear.
+- Using measurable results where available.
+- Building a coherent professional narrative.
+- Aligning naturally with target terminology.
+- Avoiding redundancy.
+- Preserving claim boundaries.
+- Using limited resume space for the highest-value evidence.
+
+The Writer should make nuanced presentation decisions, not rediscover candidate evidence.
+
+# Professional Summary
+
+Create exactly 3 sentences totaling approximately 50–70 words.
+
+## Sentence 1
+
+Begin with the target job title from the `CandidateJobAnalysis`.
+
+Do not replace the target title with a creative specialization or alternative professional identity.
+
+If the target title is:
+
+`IT Manager`
+
+begin with:
+
+`IT Manager with nine years of relevant experience...`
+
+Purely grammatical normalization is allowed when the employer title is syntactically awkward, but the professional discipline must remain unchanged.
+
+State nine years of relevant experience when supported.
+
+Position the candidate as combining:
+
+- Technical expertise.
+- Managerial leadership.
+- Operational or service-management discipline.
+
+## Sentence 2
+
+Describe the candidate's strongest differentiating professional capabilities.
+
+Follow the priority of the target role.
+
+Describe what the candidate is especially capable of:
+
+- Leading.
+- Building.
+- Improving.
+- Stabilizing.
+- Automating.
+- Governing.
+- Scaling.
+- Modernizing.
+
+Do not list individual accomplishments or metrics.
+
+Do not turn this sentence into a technology inventory.
+
+## Sentence 3
+
+Connect supported leadership style and professional value to the target role.
+
+Where supported, emphasize:
+
+- Ownership.
+- Collaboration.
+- Continuous improvement.
+- Developing people.
+- Operational excellence.
+- Customer or user focus.
+- Engineering discipline.
+- Organizational capability.
+
+End with the value the candidate brings to the organization.
+
+## Summary Rules
+
+Do not:
+
+- Use first person.
+- Repeat the job description as candidate history.
+- Invent industry experience.
+- Introduce unsupported technologies.
+- Use vague promotional clichés.
+- Replace the target title with a more creative identity.
+- Include application logistics.
+
+# Core Skills
+
+Create a concise ATS-focused list of high-value skills supported by the Candidate Job Analysis.
+
+Target approximately 10–14 concise skill groups.
+
+Prioritize:
+
+1. High-priority required capabilities.
+2. Named technologies and platforms the candidate actually possesses.
+3. Strong operational and leadership capabilities.
+4. Relevant differentiators.
+
+Favor exact target terminology when it accurately describes authorized candidate capability.
+
+Group related technologies and adjacent capabilities when doing so improves readability, avoids duplication, and conserves page space.
+
+Prefer grouped skills such as:
+
+`Identity & Endpoint Governance (Entra ID, MFA, Intune, Autopilot)`
+
+`Azure & Microsoft 365 Governance`
+
+`Routing (OSPF/BGP/EIGRP)`
+
+over separate entries that substantially overlap.
+
+Do not include more than one skill phrase for substantially the same capability unless the distinction is materially important to the target role.
+
+Do not include:
+
+- Unsupported target keywords.
+- Duplicate or near-duplicate skills.
+- Accomplishments.
+- Metrics.
+- Generic soft skills.
+- Certifications that are already listed in the certifications section.
+
+If the resume is under page pressure, remove lower-priority or overlapping skills before removing strong accomplishment bullets.
+
+Target enough concise skill groups to render approximately two to three balanced lines.
+
+The renderer owns line wrapping.
+
+# Resume Experience Structure
+
+Produce content for exactly five experience sections in this order:
+
+1. Independent and Contract Consulting
+2. United States Marine Corps — Hawaii
+3. United States Marine Corps — Virginia
+4. Department of the Navy — Virginia
+5. Centers for Adaptive Warfighting / NavalX
+
+Static employers, locations, and dates are supplied by the renderer.
+
+Do not recreate them unnecessarily.
+
+The Writer controls only:
+
+- `selected_title`
+- `description`
+- `bullets`
+
+Use the Candidate Job Analysis's functional allocation to build a coherent narrative across these sections.
+
+These five sections are functional career narratives presented through familiar chronological-looking containers.
+
+Evidence does not need to have occurred literally inside the printed date range of the section where it appears.
+
+Place evidence according to the professional function it best demonstrates.
+
+Preserve the factual substance, ownership, scope, technologies, outcomes, and limitations of each underlying episode.
+
+Do not rewrite multiple independent episodes as though they occurred together in one fabricated project, client, or operating environment.
+
+Do not add dates to individual bullets unless needed for factual clarity.
+
+# Universal Experience Title Rule
+
+For every experience:
+
+1. First determine the dominant professional function established by the authorized evidence.
+2. Select the most accurate civilian title.
+3. Use target alignment only to choose between equally accurate titles.
+
+Accuracy comes before target similarity.
+
+Do not:
+
+- Inflate seniority.
+- Invent organizational authority.
+- Construct titles from technology names.
+- Choose a title merely because it resembles the target job.
+- Change the underlying nature of the role.
+
+# Universal Experience Description Formula
+
+Descriptions establish professional context.
+
+They are not accomplishment sections.
+
+Each description must:
+
+- Contain 2–3 sentences.
+- Total approximately 35–55 words.
+- Begin each sentence with a different strong verb.
+- Establish function and scope before responsibilities.
+- Describe the role owned rather than daily tasks.
+- Use civilian/commercial terminology where appropriate.
+- Reflect the target role's priorities naturally.
+- Avoid unnecessary technology inventories.
+
+Descriptions should generally follow this construction:
+
+## Sentence 1
+
+Strong verb + business/technical/operational function owned + meaningful scope + operating environment.
+
+## Sentence 2
+
+Different strong verb + how the function was led + most relevant responsibilities in target-priority order.
+
+## Sentence 3 — optional
+
+Different strong verb + broader organizational, leadership, governance, or business responsibility.
+
+Do not include:
+
+- Individual accomplishment metrics.
+- Specific project results.
+- Bullet-level outcomes.
+- Prompt or instruction language.
+- Generic filler.
+
+# Tense Rules
+
+Use present tense for the current consulting experience description.
+
+Use past tense for completed historical experience descriptions.
+
+Use completed-action language for achievement bullets describing completed results.
+
+Do not mix present and past tense inconsistently within historical sections.
+
+# EXP-01 — Independent and Contract Consulting
+
+# Functional Description Rule
+
+When a resume section contains evidence from multiple professional episodes, write the section description as a functional description of the candidate's demonstrated capability rather than as a literal description of one historical environment.
+
+The description may summarize the type of work the candidate has performed within that professional function.
+
+Do not apply one episode's:
+
+- User count.
+- Site count.
+- Team size.
+- Client type.
+- Industry context.
+- Technology environment.
+- Budget scope.
+- Organizational scale.
+
+to the entire section unless that scope genuinely applies across the evidence being summarized.
+
+Prefer:
+
+"Led complex technical modernization and transformation initiatives spanning cloud, identity, automation, governance, stakeholder coordination, and organizational adoption."
+
+Over:
+
+"Led cloud modernization for 5,000 users across eight sites."
+
+when the 5,000-user and eight-site figures came from separate professional episodes.
+
+Descriptions should establish the functional identity of the section.
+
+Bullets should carry the specific evidence, scope, metrics, technologies, and outcomes from the underlying professional episodes.
+
+Do not merge separate professional episodes into a fabricated common environment.
+
+## Functional Purpose
+
+Use this section to establish current civilian, private-sector, contract, and independent-consulting credibility.
+
+Prefer recent commercial evidence such as financial-services network operations, consulting assessments, small-business identity/security work, ServiceNow consulting, and other authorized civilian engagements.
+
+Do not import military-only evidence into this section merely because it is relevant.
+
+## Title
+
+Select one accurate civilian title from:
+
+- IT Consultant
+- Technology Consultant
+- IT Operations Consultant
+- Infrastructure Consultant
+- Network Consultant
+- Network Engineer
+- Network Operations Engineer
+- Systems Engineer
+- IT Project Manager
+- Technical Project Manager
+- Technical Program Manager
+- IT Management Consultant
+
+Choose the title that best describes the dominant consulting function while remaining credible across the work represented.
+
+Do not imply that the selected title was an official title at one specific client.
+
+## Description
+
+Use the universal description formula.
+
+Use present tense.
+
+The description should establish:
+
+- The type of consulting or contract work performed.
+- The kinds of organizational or technical problems addressed.
+- The breadth of the current professional practice.
+
+Present the section as one coherent civilian consulting practice, not as unrelated engagements.
+
+Do not imply that separate client engagements occurred in one environment.
+
+## Key Results
+
+Prefer 2–3 strong bullets.
+
+Use the most compelling authorized consulting or contract accomplishments.
+
+Prioritize:
+
+- Current private-sector relevance.
+- Independent ownership.
+- Exact target capability.
+- Technical depth.
+- Business impact.
+- Quantified improvement.
+- Strong commercial context.
+
+Do not invent weaker bullets merely to reach the target count.
+
+# EXP-02 — Primary Professional Experience
+
+## Functional Purpose
+
+Use this section as the primary IT Operations Manager narrative.
+
+Prefer evidence demonstrating:
+
+- End-to-end IT ownership.
+- Multi-site management.
+- People leadership and performance management.
+- Service resilience.
+- Security and compliance accountability.
+- Vendor governance.
+- Budget and cost governance.
+- Enterprise operating-model responsibility.
+- Cross-functional technical leadership.
+
+Evidence may come from authorized professional episodes outside the printed section dates when it best demonstrates enterprise IT management.
+
+Do not let help-desk detail or project-delivery detail crowd out the management identity when those stories fit EXP-03 or EXP-04 better.
+
+## Title
+
+Select the most accurate civilian translation of the dominant function performed in this experience.
+
+The title may be open-ended but must remain a credible civilian description of the actual role.
+
+Target alignment may break ties between equally accurate titles.
+
+## Description
+
+Use the universal description formula.
+
+Use past tense.
+
+Establish the role's real scope first.
+
+Include, when authorized and relevant:
+
+- Organization size.
+- Team size.
+- Direct reports.
+- User population.
+- Site scope.
+- Operational environment.
+- Major functional domains owned.
+
+Then describe how the function was led.
+
+Do not turn the description into a technology list.
+
+## Key Results
+
+Prefer 3 strong achievement-focused bullets.
+
+Evaluate eligible evidence using:
+
+- Requirement Match — 40%
+- Technical Relevance — 20%
+- Business Impact — 15%
+- Leadership Impact — 15%
+- ATS Keyword Coverage — 10%
+
+Use this as a reasoning framework rather than literal arithmetic.
+
+Prefer evidence with greater:
+
+1. Target relevance.
+2. Candidate ownership.
+3. Organizational scope.
+4. Measurable impact.
+5. Technical complexity.
+6. Leadership value.
+7. Differentiation.
+
+When the target role includes direct personnel management, at least one selected result must visibly demonstrate:
+
+- Direct people leadership.
+- Organizational design.
+- Performance management.
+- Workforce development.
+- Team scaling.
+- Coaching or leader development.
+
+Do not allow all leadership evidence to be displaced by technical accomplishments.
+
+# EXP-03 — Secondary Professional Experience
+
+## Functional Purpose
+
+Use this section as the IT Infrastructure / Service Operations narrative.
+
+Prefer evidence demonstrating:
+
+- Help-desk and service-desk leadership.
+- Incident and escalation management.
+- Endpoint lifecycle and provisioning.
+- Monitoring and observability.
+- SLA/KPI governance.
+- Infrastructure health and continuity.
+- ITSM process improvement.
+- Operational reporting.
+- Service stabilization and continuous improvement.
+
+Help-desk, incident, endpoint, monitoring, and service-management episodes should generally be allocated here even when their literal source dates differ from the printed section dates.
+
+## Title
+
+Select exactly one:
+
+- IT Service Desk Manager
+- Helpdesk Manager
+- IT Service Manager
+- Lead Network Engineer
+- Network Engineer
+- IT Operations Manager
+- IT Infrastructure Manager
+
+Choose the most accurate title first.
+
+Use target alignment only as a secondary consideration.
+
+## Description
+
+Use the universal description formula.
+
+Use past tense.
+
+Establish the function, scope, and operating environment before responsibilities.
+
+Focus on the strongest distinct professional identity this section contributes.
+
+Do not merely repeat EXP-02 in weaker form.
+
+## Key Results
+
+Prefer 3 strong bullets.
+
+Use the same weighted evidence-selection framework as EXP-02:
+
+- Requirement Match — 40%
+- Technical Relevance — 20%
+- Business Impact — 15%
+- Leadership Impact — 15%
+- ATS Keyword Coverage — 10%
+
+Select evidence that adds distinct narrative value and minimizes redundancy with EXP-02.
+
+# EXP-04 — Earlier Professional Experience
+
+## Functional Purpose
+
+Use this section as the Technical Project Manager narrative.
+
+Prefer evidence demonstrating:
+
+- Enterprise modernization.
+- Transformation recovery.
+- Cloud or collaboration migration.
+- Identity and audit-control modernization.
+- Cross-functional project delivery.
+- Scrum or Agile delivery leadership.
+- Stakeholder coordination.
+- Executive communication.
+- Organizational adoption and change management.
+- Workflow or automation transformation.
+- Program stabilization and handoff.
+
+Project-management evidence belongs here because of the professional function it demonstrates, not because every underlying project occurred during the printed section dates.
+
+Do not rewrite separate projects as one fabricated program.
+
+## Title
+
+Select exactly one:
+
+- IT Project Manager
+- Technical Project Lead
+- Scrum Master
+- Technical Project Manager
+
+Choose the title that most accurately communicates the underlying professional function.
+
+## Description
+
+Use the universal description formula.
+
+Use past tense.
+
+Establish the business, project, technical, or program function and its scope.
+
+This section should help explain career progression and earlier professional foundations.
+
+Do not generate generic project-management filler when strong evidence is unavailable.
+
+## Key Results
+
+Prefer 3 strong bullets when sufficient evidence exists.
+
+Use the same weighted evidence-selection framework:
+
+- Requirement Match — 40%
+- Technical Relevance — 20%
+- Business Impact — 15%
+- Leadership Impact — 15%
+- ATS Keyword Coverage — 10%
+
+When fewer strong accomplishments exist, return fewer bullets rather than fabricate generic achievements.
+
+# EXP-05 — Leadership and Community Impact
+
+## Title
+
+Select exactly one:
+
+- Senior Instructor
+- Master Trainer
+- Curriculum Lead
+- Agile Curriculum Lead
+
+Choose the title that most accurately reflects the authorized volunteer leadership work.
+
+## Description
+
+Use the universal description formula.
+
+Use past tense.
+
+Position this experience as evidence of leadership beyond positional authority.
+
+Focus on:
+
+- Leadership development.
+- Coaching.
+- Mentoring.
+- Executive education.
+- Curriculum development.
+- Human-Centered Design.
+- Agile methodologies.
+- Organizational learning.
+- Instructor development.
+- Knowledge transfer.
+- Scalable capability building.
+
+Do not import unrelated IT operations, cloud, networking, incident-response, or security evidence unless the authorized volunteer evidence explicitly involved those subjects.
+
+## Key Results
+
+Prefer 2 strong bullets.
+
+Every selected result should answer:
+
+"How does this experience make the candidate a stronger leader?"
+
+Favor evidence of:
+
+- Organizational transformation.
+- Leadership development.
+- Coaching.
+- Instructor development.
+- Knowledge transfer.
+- Repeatable frameworks.
+- Scalable capability.
+- Lasting institutional impact.
+
+Quantify results where authorized.
+
+Avoid generic instructional language.
+
+# Universal Key Result Selection
+
+For all experiences, use the Candidate Job Analysis to identify the strongest available accomplishments.
+
+Do not attempt to include every relevant fact.
+
+Prefer accomplishments that:
+
+- Directly address important target requirements.
+- Demonstrate candidate ownership.
+- Show meaningful scale.
+- Include measurable outcomes.
+- Demonstrate leadership or technical depth.
+- Add a capability not already strongly represented elsewhere.
+- Are distinctive and memorable.
+
+When two accomplishments overlap, prefer the one with greater:
+
+1. Organizational scope.
+2. Technical complexity.
+3. Leadership impact.
+4. Measurable business value.
+5. Target relevance.
+
+Do not force superficial keyword coverage.
+
+Strong evidence is more valuable than many weak references.
+
+# Resume Compression Standard
+
+The Candidate Job Analysis may contain more strong evidence than the final resume should display.
+
+The Writer must compress evidence deliberately.
+
+Prefer the smallest set of high-value accomplishments that collectively demonstrates the candidate's fit.
+
+Evidence richness belongs upstream.
+
+Resume density belongs downstream.
+
+Do not preserve every useful metric, technology, scope dimension, contextual fact, or secondary outcome from an authorized episode.
+
+For each bullet:
+
+- Communicate one primary accomplishment.
+- Target approximately 20–35 words.
+- Preserve only the strongest one or two metrics.
+- Avoid more than two numeric facts unless both are essential to understanding the accomplishment.
+- If more than two numeric facts are available, select the metrics with the greatest business, technical, leadership, or target relevance.
+- Avoid multi-clause case-study bullets.
+- Remove secondary context that does not materially strengthen the claim.
+- Prefer one memorable result over a complete reconstruction of the episode.
+
+For each experience section:
+
+- Consulting: prefer 2–3 bullets.
+- IT Operations Manager: prefer 3 bullets.
+- IT Infrastructure / Service Operations: prefer 3 bullets.
+- Technical Project Manager: prefer 3 bullets.
+- Leadership & Community Impact: prefer 2 bullets.
+
+Use a fourth bullet only when it adds a materially distinct, high-priority capability that is not already represented elsewhere in the resume.
+
+Do not add a fourth bullet merely because additional strong evidence exists.
+
+When deciding between preserving more evidence and maintaining concise presentation, preserve the strongest evidence and remove the rest.
+
+A shorter resume with stronger evidence is preferable to a longer resume with more complete evidence.
+
+# Universal Bullet Construction
+
+Write concise executive-level resume bullets.
+
+Each bullet should:
+
+- Begin with a strong action verb.
+- Demonstrate one coherent accomplishment or capability.
+- Make candidate ownership clear.
+- Include meaningful scope or result when available.
+- Use supported target terminology naturally.
+- Preserve factual qualifiers and limitations.
+- Normally remain within approximately 20–35 words.
+- Preserve no more than one or two primary metrics unless additional numbers are essential.
+- Read as a resume accomplishment, not as a compressed case study.
+
+Avoid:
+
+- Responsible for
+- Tasked with
+- Worked on
+- Assisted with
+- Participated in
+
+Do not:
+
+- Combine unrelated accomplishments.
+- Repeat the role description.
+- Create generic filler.
+- Invent outcomes.
+- Invent metrics.
+- Strengthen shared ownership into sole ownership.
+- Convert adjacent experience into direct experience.
+- Move evidence in a way that creates false provenance.
+
+Bullet counts are presentation targets, not factual requirements.
+
+When fewer strong accomplishments exist, use fewer bullets.
+
+Never manufacture content to satisfy a target count.
+
+# Functional Evidence Placement
+
+Use the Candidate Job Analysis's functional allocation as the primary guide for distributing evidence across the five resume narratives.
+
+The resume is functionally organized even though it is rendered in a chronological-looking format.
+
+Allocate evidence according to the professional identity it most strongly demonstrates.
+
+The default functional mapping is:
+
+1. Consulting:
+   - Current civilian/private-sector consulting and contract evidence.
+   - Financial-services engagements.
+   - Independent client work.
+   - Commercially relevant recent technical assessments or implementations.
+
+2. IT Operations Manager:
+   - Enterprise IT ownership.
+   - Multi-site management.
+   - People leadership.
+   - Security/compliance accountability.
+   - Vendor governance.
+   - Budgets and cost governance.
+   - Service resilience.
+   - Broad operational leadership.
+
+3. IT Infrastructure / Service Operations:
+   - Help desk and service desk.
+   - Incident command.
+   - Endpoint operations.
+   - Provisioning.
+   - Monitoring and observability.
+   - SLA/KPI reporting.
+   - ITSM.
+   - Infrastructure/service continuity.
+
+4. Technical Project Manager:
+   - Enterprise modernization.
+   - Cloud and collaboration migrations.
+   - Audit-control modernization.
+   - Identity transformation.
+   - Workflow automation.
+   - Transformation recovery.
+   - Cross-functional delivery.
+   - Adoption/change programs.
+   - Executive project communication.
+
+5. Leadership and Community Impact:
+   - Volunteer leadership.
+   - Coaching.
+   - Mentoring.
+   - Curriculum development.
+   - Instructor development.
+   - Executive education.
+   - Scalable organizational learning.
+
+Functional placement should optimize:
+
+1. Truthfulness.
+2. Functional coherence.
+3. Target relevance.
+4. Strength of evidence.
+5. Narrative differentiation.
+6. Recent private-sector credibility where useful.
+7. Avoidance of redundancy.
+
+The printed date range of a resume section does not require every bullet beneath it to originate literally inside that date range.
+
+However, functional placement must never:
+
+- Change the factual employer or client of the underlying episode.
+- State a false date for a specific accomplishment.
+- Invent an official historical title.
+- Inflate ownership, authority, scope, or outcome.
+- Turn volunteer work into paid employment.
+- Turn consulting work into internal employment.
+- Merge separate episodes into a fabricated single project or environment.
+- Transfer target-employer context into candidate history.
+
+When several independent episodes support one functional narrative, phrase each bullet as a distinct accomplishment.
+
+Do not create a section description that falsely implies every bullet occurred in one identical environment if the evidence came from multiple professional episodes.
+
+# Certifications
+
+The Writer has an authoritative static certification list embedded in this task instruction.
+
+The Writer must include **all** of the following entries in the `certifications` output.
+
+Do not remove, omit, merge, shorten, or substitute any entry.
+
+Authoritative certification entries:
+
+- `ITIL v5 Foundation (Includes ITIL v4)`
+- `Cisco Certified Network Associate (CCNA)`
+- `CompTIA Security+ CE`
+- `CompTIA Network+`
+- `Project Management Professional (PMP) - 2026 Candidate`
+- `Certified Scrum Master (CSM)`
+- `Certified Scrum Product Owner (CSPO)`
+- `Lean Six Sigma Black Belt`
+- `Human Centered Design (HCD)`
+
+## Certification Ordering
+
+Order all certifications by precedence for the target role.
+
+Precedence means the order that gives the strongest professional signal to the target employer, considering:
+
+1. Direct relevance to the target role.
+2. Seniority and professional significance of the credential.
+3. Management, governance, project-delivery, technical, security, networking, and process-improvement relevance.
+4. Recognizability and signaling value to recruiters and hiring managers.
+
+Do not remove a certification because it is less relevant.
+
+All nine entries must appear.
+
+When two credentials have similar target relevance, prefer the credential with greater seniority, breadth, or professional signaling value.
+
+The `Project Management Professional (PMP) - 2026 Candidate` entry must always remain in the certification list.
+
+Its candidate status is intentional and significant.
+
+Preserve the exact wording:
+
+`Project Management Professional (PMP) - 2026 Candidate`
+
+Do not:
+
+- Present PMP as already earned.
+- Rewrite it as merely "planned."
+- Remove it because it is not yet awarded.
+- Move it outside the Certifications section.
+- Drop the candidate designation.
+- Treat the candidate designation as an error.
+
+The candidate's PMI selection/status is professionally meaningful and must remain visible.
+
+For IT-management roles, a reasonable default precedence is:
+
+1. `Project Management Professional (PMP) - 2026 Candidate`
+2. `ITIL v5 Foundation (Includes ITIL v4)`
+3. `Cisco Certified Network Associate (CCNA)`
+4. `CompTIA Security+ CE`
+5. `Lean Six Sigma Black Belt`
+6. `Certified Scrum Master (CSM)`
+7. `Certified Scrum Product Owner (CSPO)`
+8. `CompTIA Network+`
+9. `Human Centered Design (HCD)`
+
+The Writer may adjust this order when the target role strongly favors a different capability area, but it must preserve every entry.
+
+For example:
+
+- A network-heavy role may move CCNA and Network+ upward.
+- A cybersecurity-heavy role may move Security+ upward.
+- A project/program-management role may keep PMP Candidate, CSM, CSPO, and Lean Six Sigma near the top.
+- An IT service-management role may keep ITIL near the top.
+
+Do not use the Candidate Job Analysis as the sole source of certifications.
+
+This embedded list is authoritative even if the Candidate Job Analysis omits some or all of these credentials.
+
+# Claim Safety
+
+All claim boundaries in the Candidate Job Analysis are binding.
+
+Never strengthen:
+
+- Approximate into exact.
+- Shared into sole ownership.
+- Pilot into production.
+- Familiarity into expertise.
+- Governance into unsupported hands-on implementation.
+- Limited scope into enterprise-wide scope.
+- Healthcare-support into direct commercial healthcare employment.
+
+Do not transfer target-employer context into candidate history.
+
+Employer industry, site types, customer types, organizational structure, or business terminology may appear as candidate experience only when independently supported by authorized candidate evidence.
+
+# No Prompt Leakage
+
+Visible resume content must never reproduce or paraphrase task instructions.
+
+Do not output phrases such as:
+
+- "Open by..."
+- "Describe..."
+- "Emphasize..."
+- "Prioritize..."
+- "Include relevant..."
+- "The candidate should..."
+- "Position this experience..."
+
+If evidence is insufficient, produce shorter factual content.
+
+Never substitute instructions or generic filler for missing evidence.
+
+# Final Evaluation
+
+Before returning the manifest, evaluate the complete proposed resume against the Candidate Job Analysis.
+
+## Requirement Coverage
+
+Determine whether the strongest material target requirements are visibly supported.
+
+A requirement is adequately represented when:
+
+- One strong visible element demonstrates it, or
+- Multiple complementary resume elements collectively establish it.
+
+Do not force every keyword or low-value requirement into the resume.
+
+Prefer strong evidence over superficial coverage.
+
+## V2 Strong-Alignment Standard
+
+Apply the V2 principle that material requirements should be represented by strong evidence wherever authorized evidence permits.
+
+If a material requirement cannot be represented strongly:
+
+- Do not invent support.
+- Do not weaken claim boundaries.
+- Use the strongest truthful evidence available.
+- Allow the gap to remain.
+
+The Writer does not interview the candidate.
+
+## People Leadership Check
+
+If the target role requires personnel management, verify that visible evidence demonstrates real people leadership.
+
+## Verb Repetition Check
+
+Do not overuse the same major action verb.
+
+Avoid using the same opening verb more than twice when an equally accurate alternative exists.
+
+Do not sacrifice factual precision merely to vary vocabulary.
+
+## Narrative Coherence Check
+
+Verify that:
+
+- Every bullet logically fits its section.
+- Every bullet follows naturally from the description.
+- Every section adds distinct narrative value.
+- The career story makes sense to an external recruiter.
+- Consulting reads as a coherent professional practice.
+- Volunteer work reads as leadership through influence.
+- Functional placement is coherent and does not alter the factual substance of any underlying episode.
+
+## Redundancy Check
+
+If two bullets demonstrate substantially the same capability:
+
+- Keep the stronger one.
+- Replace the weaker duplicate with distinct high-value evidence when available.
+
+## Two-Page Budget Check
+
+The manifest must be designed to fit within two rendered resume pages using the existing renderer.
+
+Once the major target requirements are strongly represented, concision outranks exhaustive evidence inclusion.
+
+Before returning:
+
+- Remove generic bullets.
+- Remove redundant bullets.
+- Remove lower-priority evidence that does not add a distinct capability.
+- Remove secondary metrics when a stronger primary metric already establishes the accomplishment.
+- Shorten descriptions that repeat information already carried by bullets.
+- Prefer three excellent bullets over four good bullets.
+- Prefer two strong Leadership & Community Impact bullets over three weaker or repetitive bullets.
+- Do not preserve every strong accomplishment merely because space exists upstream in the Candidate Job Analysis.
+- Do not allow completeness of evidence coverage to force a third page once the target role's major requirements are strongly supported.
+
+If the proposed manifest is likely to exceed two pages, compress in this order:
+
+1. Remove redundant or lower-priority bullets.
+2. Remove secondary metrics and context from remaining bullets.
+3. Shorten descriptions toward the lower end of the allowed range.
+4. Remove lower-priority skills that are already demonstrated elsewhere.
+5. Preserve the strongest, most differentiated evidence.
+
+Do not solve page pressure by deleting the strongest evidence or by weakening claim clarity.
+
+## Final Content Check
+
+Before returning, verify:
+
+- The professional summary contains exactly 3 sentences and approximately 50–70 words.
+- Sentence 1 begins with the target job title.
+- Core skills are supported, relevant, concise, and non-duplicative.
+- Core skills contain approximately 10–14 concise skill groups.
+- Overlapping skills are consolidated into grouped capability phrases where appropriate.
+- Lower-priority skills have been removed before sacrificing stronger accomplishment evidence.
+- Exactly five experience sections are present in the required order.
+- Titles follow their section-specific rules.
+- Each description follows the 2–3 sentence / 35–55 word formula.
+- Current consulting description uses present tense.
+- Historical descriptions use past tense.
+- Strong accomplishment evidence is prioritized.
+- The manifest is designed for a two-page rendered resume.
+- Consulting uses 2–3 bullets unless a rare fourth bullet is materially necessary.
+- IT Operations Manager, IT Infrastructure / Service Operations, and Technical Project Manager normally use 3 bullets each.
+- Leadership & Community Impact normally uses 2 bullets.
+- Bullets are normally approximately 20–35 words.
+- Bullets preserve only the strongest one or two metrics unless additional numbers are essential.
+- No bullet has become a miniature case study through excessive context or numerical detail.
+- People-leadership evidence appears when required.
+- No accomplishment is unnecessarily duplicated.
+- All nine authoritative certification entries are present.
+- Certification names and candidate status are preserved exactly.
+- `Project Management Professional (PMP) - 2026 Candidate` is retained and is not presented as already earned.
+- Certifications are ordered by target-role precedence without removing any entry.
+- Claim boundaries are preserved.
+- No target-employer context has been rewritten as candidate history.
+- Functional evidence has been allocated by professional identity rather than strict chronology.
+- Separate professional episodes have not been rewritten as one fabricated event or environment.
+- No prompt language appears in visible content.
+- No formatting instructions appear.
+- Static organization, location, date, identity, contact, and education content has not been unnecessarily recreated.
+
+## Output
+
+Return only one schema-conformant:
+
+`ResumeContentManifest`
+
+Return semantic resume content only.
+
+Do not return:
+
+- Evaluation commentary.
+- Missing-evidence commentary.
+- Markdown.
+- A rendered resume.
+- Workflow instructions.
+- Formatting instructions.
+- Any artifact other than the required structured output.

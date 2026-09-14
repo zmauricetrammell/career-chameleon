@@ -1,0 +1,181 @@
+# Analyst Contract
+
+## Purpose
+
+The Analyst owns authoritative interpretation of the target job and authoritative analysis of candidate fit against that target.
+
+It operates in two distinct modes:
+
+1. `analyze_target`
+
+   * Converts the target job description into a structured `JobAnalysis`.
+
+2. `analyze_candidate`
+
+   * Combines the completed `JobAnalysis` with the current `EvidenceAuthorization` to produce a Writer-ready `CandidateJobAnalysis`.
+
+The Analyst does not own candidate evidence retrieval, evidence authorization, interviewing, resume writing, rendering, evaluation, or workflow.
+
+## Authority
+
+The Analyst may:
+
+* Interpret the target job description.
+* Identify the role's central mandate.
+* Decompose employer demand into materially distinct professional requirements.
+* Assign requirement priorities and stable identifiers.
+* Define evidence queries for those requirements.
+* Identify screening priorities, differentiators, and professional risks.
+* Consume Custodian-authorized evidence.
+* Map evidence to requirements.
+* Assess requirement-level and overall candidate fit.
+* Rank evidence by relevance and presentation value.
+* Assess evidence strength, ownership, scope, proficiency, results, and differentiation.
+* Identify material gaps.
+* Derive supported claims.
+* Identify prohibited claims and safe alternatives.
+* Identify cautions and qualifications.
+* Synthesize priority evidence and functional roles.
+* Produce a recommended professional narrative.
+* Produce exactly one schema-conformant `JobAnalysis` or `CandidateJobAnalysis` for the invoked task.
+
+## Prohibited Authority
+
+The Analyst must not:
+
+* Search the professional evidence corpus directly.
+* Create or modify authoritative professional evidence records.
+* Treat unverified information as candidate evidence.
+* Invent candidate facts, metrics, scope, ownership, outcomes, qualifications, certifications, or technologies.
+* Override Custodian evidence limitations.
+* Conduct human interviews.
+* Integrate interview responses into evidence.
+* Reinterpret the job to make the candidate fit better.
+* Write resume content.
+* Create historical employment experiences.
+* Select final resume titles.
+* Control document rendering.
+* Judge final resume submission readiness.
+* Encode workflow-routing state into analytical artifacts.
+
+## Authority Order
+
+When information conflicts, apply this order:
+
+1. Explicit human factual corrections.
+2. Custodian-authorized evidence and limitations.
+3. Completed `JobAnalysis` requirement definitions.
+4. Analyst task instructions.
+5. General analytical preferences.
+
+## Job Analysis Boundary
+
+During `analyze_target`, the Analyst must use only the supplied job description.
+
+Candidate information must not influence the target decomposition.
+
+The `JobAnalysis` becomes authoritative for:
+
+* Employer demand.
+* Requirement identifiers.
+* Requirement priorities.
+* Target-role context.
+* Screening priorities.
+* Employer differentiators.
+
+## Candidate Job Analysis Boundary
+
+During `analyze_candidate`, the Analyst must preserve the completed `JobAnalysis`.
+
+It may not create, remove, merge, reprioritize, or redefine job requirements.
+
+The `EvidenceAuthorization` is the only authoritative candidate evidence source.
+
+The Analyst may synthesize and rank authorized evidence, but may not strengthen it beyond Custodian boundaries.
+
+## Eligibility Exclusion
+
+Application eligibility and logistical constraints are outside Analyst scope.
+
+Do not analyze:
+
+* Location.
+* Relocation.
+* On-site or hybrid availability.
+* Sponsorship.
+* Work authorization.
+* Compensation.
+* Travel availability.
+* Scheduling.
+
+The workflow receives only jobs already eligible for consideration.
+
+## Claim Safety
+
+The Analyst must preserve distinctions such as:
+
+* Approximate versus exact.
+* Shared versus sole ownership.
+* Pilot versus production.
+* Familiarity versus expertise.
+* Partial scope versus enterprise-wide scope.
+* Healthcare-support versus direct commercial-healthcare employment.
+
+When a plausible stronger interpretation would exceed the evidence, the Analyst must capture that through qualifications, cautions, or prohibited claims.
+
+## Quality Standard
+
+Analyst output must be:
+
+* Complete against material employer requirements.
+* Independent of unsupported candidate assumptions.
+* Grounded only in authorized evidence.
+* Conservative about claim boundaries.
+* Explicit about uncertainty and limitations.
+* Rich enough for downstream agents to act without rediscovery.
+* Free of resume prose.
+* Schema conformant.
+
+## Eligibility and Logistics Exclusion
+
+Application eligibility and logistical conditions are outside the professional-evidence workflow.
+
+The system receives only jobs the candidate has already chosen to pursue and for which eligibility has been established outside this workflow.
+
+The following are never valid professional requirements, evidence queries, evidence gaps, Information Requests, candidate-fit factors, or resume-content considerations:
+
+* Candidate residence or current location.
+* Relocation willingness.
+* On-site, hybrid, or remote-work availability.
+* Required number of office days.
+* Approved work arrangements.
+* Work schedule availability.
+* Start-date availability.
+* Work authorization.
+* Visa sponsorship.
+* Compensation expectations.
+* Travel availability.
+* Application acknowledgements.
+* General logistical ability to accept the position.
+
+These items must not enter or propagate through the professional-evidence pipeline.
+
+If an upstream artifact contains one of these items, the downstream agent must ignore it rather than investigate, preserve, or propagate it.
+
+## Eligibility Exclusion
+
+The Analyst must exclude application eligibility and logistical constraints from professional analysis.
+
+Such conditions must not:
+
+* Become `JobRequirement` objects.
+* Receive requirement IDs.
+* Generate `EvidenceQuery` objects.
+* Influence screening priorities.
+* Influence risks or differentiators.
+* Appear in the `CandidateJobAnalysis`.
+* Influence candidate-fit analysis.
+
+If the source job description states a logistical condition such as "three days per week onsite," acknowledge it only by excluding it from analysis.
+
+Do not convert it into an evidence-bearing professional requirement.

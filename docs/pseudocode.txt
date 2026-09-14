@@ -1,0 +1,81 @@
+Process Starts at Supervisor Handler
+
+Supervisor Handler
+- create folder structure in [file handler]
+- log
+- initialize agent (supervisor)
+- log
+- call evaluator()
+- log
+- kaizen()
+- return()
+
+Evaluator Handler
+- read log
+- initialize agent (evaluator)
+- log
+- call writer ()
+- log
+- pass = evaluateresume() -> agent
+- log
+- if pass:
+    return()
+- else:
+    call writer
+
+Writer Handler
+- read log
+- initialize agent (writer)
+- log
+- find inputs
+- log
+- call analyst ()
+- log 
+- writeresume() -> Agent
+- log
+return()
+
+Analyst Handler
+- read log
+- initialize agent (analyst)
+- log
+- jer = analyze job (job) -> Agent
+- log 
+- commit jer [file handler]
+- log
+- call custodian ()
+- log
+return()
+
+
+Custodian Handler
+- read log
+- initialize agent (custodian)
+- log
+### Loop back to here
+- jea,erqs = identify evidence (jer) -> Agent
+- if erqs.len != 0:
+    - while erqs.len !== ersp.len: # if there are unanswered erqs
+        - call interviewer ()
+    - listoflinks = get responses [filehandler]
+    - integrate evidence (list of links)
+    ### Loop
+- else:
+    break
+- log
+return()
+
+
+Interviewer Handler
+-  read log
+- initialize agent (interviewer)
+- log
+- erqs = get erqs [file handler]
+- for erq in erqs:
+    - while [file handler] does not contain "ersp-XXXX"
+        -  msgforhuman = sendtoAgent (erq,taskinstruction) -> Agent
+        -  response = sendtoHuman(msgforhuman) -> discord
+        -  wait() ##this loop is badly written
+    log
+- log
+return() - with success codes maybe?

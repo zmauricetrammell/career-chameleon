@@ -1,0 +1,49 @@
+Sono Bello is America's top cosmetic surgery specialist, with 185+ board-certified surgeons
+who have performed over 300,000 laser liposuction and body contouring procedures. A career
+at Sono Bello means being part of a dynamic and high-energy work environment where every
+team member can make a difference. We love what we do, and it shows! We believe everyone
+deserves to have their best body today and pursue their best life now.
+This position is based on-site in the Greater Seattle Area.
+A career at Sono Bello means being part of a dynamic, high-energy work environment where
+every team member can make a difference. We love what we do, and it shows. As the national
+leader in providing cutting-edge, personalized body transformations, we believe everyone
+deserves their best body today and the opportunity to pursue their best life now. With over 135
+locations, Sono Bello is the largest and fastest-growing cosmetic surgery practice in the nation.
+Sono Bello is seeking an IT Manager to oversee operational IT services across clinic and
+corporate locations in a cloud-first healthcare environment. This role ensures technology
+systems are reliable, secure, and aligned with business and regulatory requirements. The IT
+Manager drives service delivery performance, operational accountability, analytics, and
+continuous improvement across infrastructure, networking, identity, and endpoint platforms.
+ESSENTIAL DUTIES AND RESPONSIBILITIES:
+• Responsible for overall IT operations across service desk, infrastructure, networking, and
+endpoint management
+• Accountable for service performance, including SLA/KPI tracking, operational trend
+analysis, and ongoing reporting on system, endpoint, and network health
+• Responsible for escalation oversight and resolution of business-critical incidents
+• Ensures consistent onboarding, offboarding, provisioning, and documentation practices
+across all locations
+• Oversees Azure infrastructure to maintain availability, stability, and cost control
+• Maintains secure and compliant Microsoft 365 services aligned with enterprise
+standards
+• Responsible for identity lifecycle management within Entra ID, including access
+governance and conditional access
+• Oversees Intune and Windows Autopilot to ensure standardized and compliant device
+deployment
+• Ensures enforcement of Zero Trust and endpoint security controls
+• Responsible for network reliability and coordinates vendor support as needed
+• Ensures operational compliance with HIPAA, SOC, and related regulatory requirements
+• Oversees vulnerability management, patch compliance, and audit readiness
+• Drives process improvements and operational efficiency through automation and
+standardization
+• Provides leadership, mentorship, and performance management for IT staff
+• Manages vendor relationships and supports budgeting and cost oversight
+• Supports operational planning and stabilization of enterprise technology initiatives
+EDUCATION AND EXPERIENCE REQUIRED:
+• 7+ years of progressive IT experience with operational leadership responsibilities
+• Experience managing IT operations in a multi-site environment
+• Strong knowledge of Microsoft Azure, Microsoft 365, Entra ID, and Intune
+• Working knowledge of Meraki networking solutions
+• Experience building performance metrics and executive-level reporting
+• Strong analytical, organizational, and communication skills
+• Healthcare or regulated industry experience preferred
+• ITIL, Azure, or Cisco certifications preferred

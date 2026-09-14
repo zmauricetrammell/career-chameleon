@@ -1,0 +1,231 @@
+# Analyst Task Instruction — Analyze Job
+
+## Task
+
+Analyze the supplied target job description and produce exactly one schema-conformant:
+
+`JobAnalysis`
+
+The purpose of this artifact is to give downstream agents a complete, accurate understanding of what the employer professionally requires and what candidate evidence would establish those requirements.
+
+Analyze employer demand only.
+
+Do not use candidate information.
+
+Do not assess candidate fit.
+
+Do not search for candidate evidence.
+
+Do not write resume content.
+
+## Core Objective
+
+Determine:
+
+- What the employer fundamentally needs this person to own or accomplish.
+- Every materially distinct professional requirement.
+- Which requirements are most important to screening and selection.
+- What scope, ownership, seniority, and depth the employer expects.
+- What capabilities would distinguish an excellent candidate.
+- What professional evidence would establish each important requirement.
+
+The output must be dense enough that the Custodian can search the candidate's professional evidence corpus without independently re-analyzing the job description.
+
+## Central Mandate
+
+Identify the central mandate of the role.
+
+Explain:
+
+- Why the employer is hiring this person.
+- What function or outcome the person fundamentally owns.
+- What successful performance in the role appears to mean.
+
+Synthesize the role rather than merely restating responsibilities.
+
+## Operating Context
+
+Describe source-supported context that materially affects the role, such as:
+
+- Industry.
+- Organizational environment.
+- Multi-site or distributed operations.
+- Regulatory environment.
+- Technical environment.
+- Cloud or infrastructure model.
+- Internal stakeholder relationships.
+- Vendor relationships.
+- Leadership scope.
+
+Do not invent facts or quantities.
+
+Employer context describes the target environment only.
+
+It must never be presented as candidate experience later unless independently established by candidate evidence.
+
+## Professional Requirement Analysis
+
+Identify every materially distinct professional requirement in the posting.
+
+A requirement is materially distinct when establishing it would reasonably require different candidate evidence from another requirement.
+
+Do not collapse independent capabilities into broad umbrella requirements merely because they belong to the same domain.
+
+For example, when independently present in the posting, distinguish capabilities such as:
+
+- IT operations leadership.
+- Service delivery.
+- SLA/KPI management.
+- Executive reporting.
+- Major incident management.
+- Cloud infrastructure.
+- Microsoft 365.
+- Identity lifecycle management.
+- Identity and access governance.
+- Endpoint management.
+- Intune.
+- Windows Autopilot.
+- Networking.
+- Named networking platforms.
+- Cybersecurity.
+- Zero Trust.
+- Regulatory compliance.
+- Vulnerability management.
+- Patch management.
+- Automation.
+- Process improvement.
+- Staff leadership.
+- Performance management.
+- Vendor management.
+- Budget and cost management.
+- Program stabilization.
+- Project delivery.
+- Required years or depth of experience.
+- Multi-site experience.
+- Industry experience.
+- Certifications.
+
+Combine requirements only when they represent substantially the same capability and would be established by substantially the same professional evidence.
+
+For each material requirement, explain:
+
+- What the employer requires.
+- Whether it appears critical, required, preferred, or differentiating.
+- What the requirement means in practical professional terms.
+- The ownership, depth, or scope implied by the posting.
+- Why the capability matters to the role.
+- Any important distinction such as managerial versus hands-on responsibility, governance versus implementation, or breadth versus specialization.
+
+## Screening Priorities
+
+Identify the professional factors most likely to drive recruiter and hiring-manager screening.
+
+Prioritize:
+
+- Explicit mandatory qualifications.
+- Repeated responsibilities.
+- Responsibilities central to the role's mandate.
+- Named technologies or platforms.
+- Leadership expectations.
+- Required scope.
+- Industry or regulatory experience.
+- Important preferred qualifications.
+
+Clearly distinguish major screening criteria from secondary or supporting capabilities.
+
+## Differentiators
+
+Identify what would make an otherwise qualified candidate unusually compelling.
+
+Differentiators should represent capabilities, scope, outcomes, combinations of experience, or professional context that exceed basic qualification.
+
+Do not simply repeat required qualifications.
+
+## Evidence Needs
+
+Describe the professional facts the Custodian should search for in the candidate's evidence corpus.
+
+Evidence needs should be organized around the material requirements identified above.
+
+For each important capability, explain the minimum useful facts that would establish it, such as:
+
+- What the candidate personally owned or performed.
+- Leadership or contribution boundaries.
+- Meaningful organizational or technical scope.
+- Relevant technologies or platforms.
+- Duration when professionally meaningful.
+- Team, user, site, budget, vendor, or environment scale when material.
+- Quantified operational or business outcomes.
+- Relevant regulatory or industry context.
+- Evidence of increasing responsibility or organizational impact.
+
+Request professional evidence, not audit documentation.
+
+Do not request:
+
+- Exhaustive inventories.
+- Administrative identifiers.
+- Per-event histories.
+- Configuration dumps.
+- Documentary proof merely because it could theoretically exist.
+
+The goal is to establish useful professional capability for candidate analysis and resume positioning, not to reconstruct every implementation detail.
+
+Evidence needs should be broad enough for the Custodian to find complementary evidence and strong accomplishments, rather than only the minimum fact required to prove that a capability exists.
+
+## Interpretation and Assumption Boundaries
+
+Identify important assumptions downstream agents must avoid.
+
+Examples include:
+
+- Do not infer breadth of responsibility from title alone.
+- Do not infer hands-on expertise from governance responsibility.
+- Do not infer named-platform experience from adjacent technology.
+- Do not infer individual ownership from a team result.
+- Do not infer certification from familiarity.
+- Do not infer industry experience from the target employer's industry.
+- Do not transfer employer context into candidate history.
+
+## Eligibility and Logistics Exclusion
+
+The workflow receives only jobs that the candidate has already chosen to pursue and for which application eligibility is handled outside this system.
+
+Ignore:
+
+- Current location.
+- Relocation.
+- On-site, hybrid, or remote availability.
+- Required office days.
+- Work authorization.
+- Visa sponsorship.
+- Compensation.
+- Travel availability.
+- Start date.
+- Scheduling.
+- Application acknowledgements.
+
+These conditions must not become professional requirements, screening priorities, risks, differentiators, or evidence needs.
+
+## Final Review
+
+Before returning the analysis, verify that:
+
+- Every material professional responsibility is represented.
+- Required and preferred qualifications are represented.
+- Important technical requirements have not been hidden inside broad leadership themes.
+- Distinct capabilities remain distinct when they require different evidence.
+- Requirement importance is clear.
+- Evidence needs are sufficient for meaningful candidate analysis without becoming an audit checklist.
+- Employer context has not been treated as candidate evidence.
+- No candidate information influenced the analysis.
+- No application eligibility or logistical constraints appear.
+- No resume-writing decisions have been made.
+
+## Output
+
+Return only one schema-conformant:
+
+`JobAnalysis`
+
+The substantive analysis should be dense, clearly organized prose intended for direct consumption by the Custodian and later Analyst invocation.

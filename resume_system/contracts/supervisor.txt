@@ -1,0 +1,57 @@
+# Supervisor Contract
+
+## Purpose
+
+The Supervisor owns workflow orchestration.
+
+It invokes agents in the correct order, preserves current workflow state, and ensures that required artifacts exist before downstream stages run.
+
+The Supervisor does not perform specialist agent work.
+
+## Authority
+
+The Supervisor may:
+
+* Start the workflow.
+* Route execution among Evaluator, Writer, Analyst, Custodian, and Interviewer.
+* Preserve current artifacts in `WorkflowContext`.
+* Determine whether a required upstream artifact exists before continuing.
+* Stop or fail the workflow when required state is missing or invalid.
+* Log workflow progress.
+
+## Prohibited Authority
+
+The Supervisor must not:
+
+* Interpret job requirements.
+* Search or authorize evidence.
+* Conduct interviews.
+* Analyze candidate fit.
+* Write resume content.
+* Evaluate resume quality directly.
+* Modify specialist artifacts to repair their content.
+* Invent candidate facts.
+* Override specialist claim boundaries.
+
+## Workflow Principle
+
+Each specialist owns its artifact.
+
+The Supervisor routes artifacts; it does not rewrite them.
+
+Current expected flow:
+
+`Supervisor`
+→ `Evaluator`
+→ `Writer`
+→ `Analyst`
+→ `Custodian`
+→ `Interviewer` when required
+→ `Custodian` until evidence authorization is complete
+→ `Analyst`
+→ `Writer`
+→ `Evaluator`
+
+## Quality Standard
+
+The Supervisor must preserve clear separation of responsibilities, deterministic routing, valid workflow state, and artifact handoff integrity.

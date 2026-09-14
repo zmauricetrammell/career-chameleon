@@ -1,0 +1,528 @@
+# Evaluator Task Instruction — Evaluate Resume
+
+## Task
+
+Evaluate the supplied rendered resume against the supplied target job description.
+
+Return exactly one schema-conformant:
+
+`ResumeEvaluation`
+
+The Evaluator judges the final product only.
+
+Do not search for additional evidence.
+
+Do not reason about which upstream agent should be rerun.
+
+Do not provide artifact-reuse guidance.
+
+Do not rewrite the resume.
+
+## Inputs
+
+Use only:
+
+- The rendered resume.
+- The target job description.
+
+Treat the resume as the complete candidate-facing product.
+
+Treat the job description as the authoritative statement of employer demand.
+
+Do not use candidate facts from memory, prior runs, JERs, evidence authorizations, candidate analyses, or any other source not explicitly supplied to this evaluation task.
+
+If a capability is not visible in the resume, treat it as not visibly demonstrated.
+
+## Core Objective
+
+Determine whether the resume presents a strong, credible, truthful, and sufficiently complete case for the target role.
+
+Evaluate:
+
+- Requirement coverage.
+- Strength of visible evidence.
+- ATS alignment.
+- Recruiter readability.
+- Hiring-manager credibility.
+- Narrative coherence.
+- Resume density and prioritization.
+- Claim safety.
+- Highest-value remaining improvements.
+
+The resume does not need to be perfect.
+
+The Evaluator should recommend another iteration only when material improvement is justified.
+
+## Requirement Coverage
+
+Evaluate every materially important requirement in the target job description.
+
+For each major requirement, determine whether the resume provides:
+
+- Strong visible evidence.
+- Adequate visible evidence.
+- Partial evidence.
+- Keyword-only or weak evidence.
+- No visible evidence.
+
+Distinguish between:
+
+- A target keyword appearing in Core Skills.
+- A capability being described in an experience description.
+- A capability being demonstrated through an accomplishment.
+- A capability being demonstrated through quantified results.
+
+Experience-level proof is stronger than keyword presence alone.
+
+Do not award full credit merely because the resume contains the employer's terminology.
+
+## Evidence Strength
+
+Judge visible resume evidence based on:
+
+- Candidate ownership.
+- Scope.
+- Quantified results.
+- Technical specificity.
+- Organizational complexity.
+- Leadership responsibility.
+- Business or operational impact.
+- Distinctiveness.
+- Credibility.
+
+Prefer demonstrated outcomes over generic responsibility statements.
+
+Examples:
+
+Strong:
+
+`Reduced average MTTR from approximately three months to approximately three days.`
+
+Weaker:
+
+`Improved incident-management performance.`
+
+Strong:
+
+`Led a 38-person IT organization supporting approximately 3,000 users across eight sites.`
+
+Weaker:
+
+`Experienced in multi-site IT leadership.`
+
+## ATS Assessment
+
+Evaluate whether the resume naturally includes the important terminology and capability signals needed for target-role screening.
+
+Consider:
+
+- Target job title.
+- Required technologies.
+- Required operating domains.
+- Service-management terminology.
+- Leadership terminology.
+- Security and compliance terminology.
+- Required or preferred certifications.
+- Other materially important employer language.
+
+Do not reward keyword stuffing.
+
+A keyword that appears without supporting evidence should receive less credit than one backed by demonstrated experience.
+
+## Recruiter Assessment
+
+Evaluate whether a recruiter can quickly determine:
+
+- What the candidate does.
+- Why the candidate fits the target role.
+- Candidate seniority.
+- Relevant recent experience.
+- Leadership scale.
+- Major technical domains.
+- Major outcomes.
+- Career progression.
+- Distinguishing strengths.
+
+Identify problems such as:
+
+- Excessive density.
+- Weak prioritization.
+- Generic language.
+- Repetition.
+- Unclear ownership.
+- Excessive technical detail.
+- Weak recent relevance.
+- Difficult scanability.
+
+## Hiring-Manager Assessment
+
+Evaluate whether the resume demonstrates enough operating and technical substance to justify deeper interview interest.
+
+Look for visible evidence of:
+
+- Operational ownership.
+- People leadership.
+- Technical depth.
+- Service reliability.
+- Incident management.
+- Governance.
+- Security and compliance.
+- Vendor and budget responsibility.
+- Transformation capability.
+- Staff development.
+- Other role-specific priorities from the job description.
+
+Distinguish between claims of responsibility and demonstrated results.
+
+## Strengths
+
+Identify the strongest resume content.
+
+Focus on evidence that materially increases target-role competitiveness.
+
+Strong areas may include:
+
+- Quantified transformation.
+- Unusual scale.
+- Strong people leadership.
+- Service-performance improvement.
+- Technical modernization.
+- Security or compliance outcomes.
+- Current commercial relevance.
+- Operational resilience.
+- Business impact.
+
+Do not fill this section with generic praise.
+
+Explain why the strongest content is effective.
+
+## Weaknesses
+
+Identify only meaningful weaknesses.
+
+A weakness is material when it could:
+
+- Reduce ATS match.
+- Reduce recruiter confidence.
+- Reduce hiring-manager confidence.
+- Leave an important target requirement under-demonstrated.
+- Create ambiguity.
+- Create credibility concerns.
+- Waste valuable resume space.
+- Create claim-safety risk.
+
+Do not manufacture criticism merely to appear balanced.
+
+Do not treat every possible improvement as a defect.
+
+## Recommended Improvements
+
+Prioritize improvements by expected marginal value.
+
+Lead with the changes most likely to improve:
+
+- Target-role coverage.
+- Recruiter comprehension.
+- Hiring-manager confidence.
+- Evidence strength.
+- Claim safety.
+- Resume efficiency.
+
+Distinguish between:
+
+- High-value improvements.
+- Moderate-value improvements.
+- Low-value polish.
+
+Do not recommend adding facts or accomplishments that are not visible in the supplied resume.
+
+The Evaluator may identify that stronger proof would help, but must not assume such proof exists elsewhere.
+
+For example:
+
+Good:
+
+`Windows Autopilot appears in Core Skills but lacks experience-level proof, leaving this requirement under-demonstrated.`
+
+Good:
+
+`Vendor management is visible as a responsibility but lacks concrete scope or outcome evidence.`
+
+Not allowed:
+
+`Use JER-0016 to add the Autopilot evidence.`
+
+Not allowed:
+
+`Rerun the Custodian to find better vendor evidence.`
+
+Those are workflow responsibilities outside Evaluator scope.
+
+## Claim Safety
+
+Evaluate whether any visible resume statement appears:
+
+- Unsupported by surrounding resume context.
+- Internally inconsistent.
+- Overstated.
+- Ambiguous in ownership.
+- Misleading in scope.
+- Confusing in credential status.
+- Contaminated by target-employer context.
+- Misleading because of functional placement.
+
+Pay particular attention to distinctions such as:
+
+- Approximate versus exact.
+- Shared versus sole ownership.
+- Governance versus hands-on implementation.
+- Pilot versus production.
+- Healthcare-support versus direct healthcare employment.
+- Candidate credential status versus earned credential status.
+
+Do not reject a clearly labeled candidate credential merely because it is not yet earned.
+
+Flag it only if presentation could reasonably mislead the reader.
+
+## Functional Resume Evaluation
+
+The resume may use a functional career architecture presented through chronological-looking experience containers.
+
+Do not assume every bullet beneath a role occurred literally within the printed date range.
+
+Functional placement itself is not a defect.
+
+Evaluate whether:
+
+- The evidence logically supports the professional identity of the section.
+- The section remains internally coherent.
+- The factual nature of accomplishments remains credible.
+- Employer or client context is not falsely rewritten.
+- Separate episodes are not misleadingly merged into one fabricated event.
+- Volunteer work is not presented as paid employment.
+- Consulting work is not presented as internal employment.
+- Functional grouping improves clarity rather than creating confusion.
+
+Judge factual presentation, not strict chronology.
+
+## Length and Density
+
+Evaluate whether the resume uses space effectively.
+
+A strong resume should:
+
+- Prioritize high-value evidence.
+- Be easy to scan.
+- Avoid unnecessary repetition.
+- Avoid mini case studies.
+- Avoid excessive metrics in one bullet.
+- Avoid bloated descriptions.
+- Avoid overly long skill inventories.
+- Avoid a third page when comparable impact can reasonably fit in two.
+
+Do not penalize page count mechanically.
+
+Penalize length only when it reduces prioritization, clarity, scanability, or recruiter impact.
+
+## Certification Evaluation
+
+Evaluate certifications for:
+
+- Relevance.
+- Clarity.
+- Truthful status.
+- Readability.
+
+Candidate-status credentials are permitted when clearly labeled.
+
+Do not automatically treat:
+
+`Project Management Professional (PMP) - 2026 Candidate`
+
+as an error.
+
+Evaluate whether the wording clearly distinguishes candidate status from an earned PMP credential.
+
+Do not require removal merely because the credential is not yet awarded.
+
+## Decision
+
+Set `decision` to exactly one of:
+
+`pass`
+
+`fail`
+
+`error`
+
+### pass
+
+Return `pass` when:
+
+- The resume is strong enough to use for the target role.
+- Major requirements are adequately represented.
+- No material claim-safety problem exists.
+- Remaining weaknesses are minor or low-value.
+- Another workflow iteration is unlikely to create enough improvement to justify the cost.
+
+The resume does not need to be perfect.
+
+Do not fail a strong resume merely because additional optimization is possible.
+
+### fail
+
+Return `fail` when:
+
+- The resume is readable and evaluable.
+- One or more material weaknesses remain.
+- Those weaknesses meaningfully reduce target-role fit, recruiter confidence, hiring-manager confidence, evidence strength, or claim safety.
+- Another revision cycle is justified.
+
+`fail` means:
+
+`The resume needs meaningful improvement.`
+
+It does not mean:
+
+`The candidate is unqualified.`
+
+It does not identify the responsible agent.
+
+It does not determine workflow routing.
+
+### error
+
+Return `error` only when a reliable evaluation cannot be performed.
+
+Examples:
+
+- Resume is missing.
+- Job description is missing.
+- Resume content cannot be read.
+- Artifact is malformed or incomplete.
+- Inputs clearly do not correspond to one another.
+- Rendering failure prevents meaningful evaluation.
+
+Do not use `error` for an ordinary weak resume.
+
+## Decision Discipline
+
+Before returning `fail`, ask:
+
+`Would the identified improvements materially improve the product enough to justify another complete workflow iteration?`
+
+If no:
+
+Return `pass`.
+
+If yes:
+
+Return `fail`.
+
+Avoid endless polishing cycles.
+
+A strong resume with a few remaining opportunities should normally pass.
+
+## Output Field Guidance
+
+Populate the `ResumeEvaluation` fields as follows.
+
+### overall_assessment
+
+Provide a concise holistic assessment of the resume.
+
+State whether it is weak, moderate, strong, or exceptional for the target.
+
+An informal numeric score may be included in the prose if useful, but scoring is not required.
+
+### requirement_coverage
+
+Explain how well the visible resume covers the job description's most important requirements.
+
+Distinguish:
+
+- Strongly demonstrated requirements.
+- Adequately demonstrated requirements.
+- Weak or keyword-only requirements.
+- Materially missing requirements.
+
+### strengths
+
+Identify the strongest visible content and explain why it improves candidacy.
+
+### weaknesses
+
+Identify only material weaknesses.
+
+Do not list trivial style preferences.
+
+### recommended_improvements
+
+Rank the most valuable product-level improvements.
+
+Focus on marginal gain.
+
+Do not provide workflow-routing instructions.
+
+Do not identify which agent should be rerun.
+
+### claim_safety
+
+Identify material claim-safety concerns.
+
+If none exist, say so clearly.
+
+### decision
+
+Return exactly:
+
+`pass`
+
+`fail`
+
+or
+
+`error`
+
+## Final Review
+
+Before returning the evaluation, verify:
+
+- Only the supplied resume and job description were used.
+- No hidden evidence was assumed.
+- Major target requirements were evaluated.
+- Keyword presence was distinguished from demonstrated evidence.
+- Strengths are substantive.
+- Weaknesses are material.
+- Recommendations are prioritized by marginal value.
+- Claim-safety issues are separated from ordinary optimization.
+- Functional resume placement was not incorrectly treated as strict chronology.
+- Page length was judged by impact rather than mechanically.
+- Credential candidate status was evaluated accurately.
+- No upstream agent was blamed.
+- No artifact-reuse guidance was produced.
+- No workflow routing was attempted.
+- No resume rewrite was produced.
+- `fail` is used only when another iteration is materially justified.
+- `error` is used only when evaluation itself cannot reliably occur.
+
+## Output
+
+Return only one schema-conformant:
+
+`ResumeEvaluation`
+
+Return evaluation content only.
+
+Do not return:
+
+- Resume rewrites.
+- Replacement bullets.
+- Replacement summaries.
+- Workflow routing.
+- Agent-specific feedback.
+- Artifact reuse instructions.
+- Evidence-search instructions.
+- Interview questions.
+- Rendering instructions.
+- Any artifact other than the required structured output.

@@ -1,0 +1,637 @@
+# Analyst Task Instruction — Match Candidate Evidence
+
+## Task
+
+Evaluate the candidate against the completed `JobAnalysis` using only the evidence authorized in the current `EvidenceAuthorization`.
+
+Return exactly one schema-conformant:
+
+`CandidateJobAnalysis`
+
+The purpose of this artifact is to give the Writer a complete, evidence-grounded strategic brief for producing the strongest truthful targeted resume.
+
+The Analyst owns target relevance and candidate-fit interpretation.
+
+The Analyst does not search the evidence corpus, conduct interviews, authorize new evidence, or write resume content.
+
+## Inputs
+
+Use only:
+
+- The completed `JobAnalysis`.
+- The completed current `EvidenceAuthorization`.
+
+The `JobAnalysis` is authoritative for employer demand.
+
+The `EvidenceAuthorization` is authoritative for candidate facts, professional context, ownership, scope, results, and claim boundaries.
+
+Do not use candidate information from model memory or any source outside the authorized evidence.
+
+## Core Objective
+
+Determine:
+
+- How well the candidate aligns with the role.
+- Which professional evidence most strongly supports that alignment.
+- Which candidate experiences are most important to the story.
+- Which accomplishments are most valuable.
+- Which technical and leadership themes should be emphasized.
+- Which evidence is direct, complementary, partial, or weak.
+- What professional differentiators the candidate possesses.
+- What material gaps remain.
+- What claims are safe.
+- What claims would overstate the evidence.
+- What coherent narrative the Writer should build.
+
+The Writer should not need to rediscover the candidate's story.
+
+## Overall Fit
+
+Begin with a concise assessment of overall candidate fit.
+
+Explain:
+
+- Whether the candidate is an exceptional, strong, moderate, or weak match.
+- Why.
+- Which requirements drive that assessment.
+- Which evidence is most convincing.
+- Which limitations materially affect the fit.
+
+Do not make hiring predictions.
+
+Do not use unsupported promotional language.
+
+## Target-to-Candidate Alignment
+
+Evaluate the candidate against every material professional requirement identified in the Job Analysis.
+
+For each important requirement, explain:
+
+- What the employer needs.
+- What authorized candidate evidence addresses it.
+- How directly that evidence matches.
+- Candidate ownership.
+- Meaningful scope.
+- Technical or functional depth.
+- Relevant results.
+- Whether the evidence is strong, partial, adjacent, or absent.
+- Any material limitation.
+
+Do not reduce this section to keyword matching.
+
+Evaluate substantive capability.
+
+A candidate may strongly satisfy a requirement through transferable experience even when the exact employer context differs.
+
+When transferability is relevant, explain why the experience transfers.
+
+## Evidence Strength
+
+Distinguish among:
+
+- Direct evidence.
+- Strongly transferable evidence.
+- Complementary evidence.
+- Partial evidence.
+- Weak or incidental evidence.
+- Unsupported capability.
+
+Prefer evidence with:
+
+- Clear candidate ownership.
+- Meaningful organizational or technical scope.
+- Quantified results.
+- Direct target relevance.
+- Distinctive complexity.
+- Demonstrated leadership.
+- Strong business or operational impact.
+
+Do not treat all evidence as equally valuable.
+
+## Strongest Professional Evidence
+
+Identify the strongest professional evidence available for the target role.
+
+For each major evidence theme or professional episode, preserve enough factual detail for the Writer to use it without source rediscovery.
+
+Include where relevant:
+
+- Professional context.
+- Candidate role.
+- Ownership.
+- Team, user, site, platform, budget, vendor, or environment scale.
+- Technologies and methods.
+- Duration.
+- Quantified outcomes.
+- Business impact.
+- Operational impact.
+- Security or compliance impact.
+- Leadership impact.
+- Distinctive complexity.
+- Important limitations.
+
+Do not reduce strong evidence to generic statements.
+
+Prefer:
+
+"Led a 38-person IT organization supporting approximately 3,000 users across eight sites, with five direct-report section leaders and responsibility spanning service desk, infrastructure, networking, cybersecurity, and operational governance."
+
+over:
+
+"Has multi-site IT leadership experience."
+
+## Professional Narrative
+
+Explain the coherent professional story that emerges from the authorized evidence.
+
+Describe:
+
+- The candidate's primary professional identity.
+- How technical depth and leadership experience reinforce one another.
+- How the candidate's career progression supports the target role.
+- How recent civilian or private-sector work contributes to the story.
+- How major technical, operational, program, and leadership experiences complement one another.
+- What combination of capabilities makes the candidate distinctive.
+
+Do not invent a new historical job title.
+
+Do not write the professional summary.
+
+The goal is to tell the Writer what the story is, not to write the final story.
+
+The candidate's professional identity must be derived from authorized candidate evidence, not from the target employer's industry, customer model, site type, or operating context.
+
+Do not describe the candidate as a healthcare IT leader, clinic IT leader, retail IT leader, financial-services IT leader, or similar target-context identity unless the authorized evidence independently establishes that professional identity.
+
+Transferability belongs in target-to-candidate comparison, not in the candidate's identity statement.
+
+## Functional Narrative Allocation
+
+Translate the authorized evidence into the resume's functional career narratives.
+
+The resume is functionally organized even though the rendered document uses familiar employer, location, and date containers.
+
+The Analyst must explicitly determine which evidence best supports each of these five professional narratives:
+
+1. Independent and Contract Consulting
+2. IT Operations Manager
+3. IT Infrastructure / Service Operations Manager
+4. Technical Project Manager
+5. Leadership and Community Impact
+
+Functional allocation is part of the Analyst's job.
+
+Do not leave the Writer to infer from chronology where strong evidence belongs.
+
+For each functional narrative, explain:
+
+- The professional identity that section should communicate.
+- Which authorized professional episodes best support that identity.
+- Which accomplishments should receive highest priority.
+- Which technical, operational, leadership, or transformation capabilities should be visible.
+- Which evidence is complementary but secondary.
+- Which evidence should be excluded because it belongs more naturally to another functional narrative.
+
+Use professional function as the primary allocation criterion.
+
+Examples:
+
+- Help-desk transformation, major-incident command, endpoint lifecycle, monitoring, KPI reporting, ITSM, and infrastructure-service continuity normally strengthen the IT Infrastructure / Service Operations Manager narrative.
+- Large-team IT ownership, people management, regulatory accountability, vendor governance, budgets, service resilience, and enterprise operating-model responsibility normally strengthen the IT Operations Manager narrative.
+- Enterprise modernization, recovered transformation programs, audit-control modernization, cross-functional delivery, cloud migrations, workflow transformation, and organizational adoption programs normally strengthen the Technical Project Manager narrative.
+- Current commercial consulting, financial-services network work, independent identity/security work, and other contemporary civilian engagements normally strengthen the Consulting narrative.
+- Volunteer coaching, curriculum, instructor development, executive education, and scalable capability-building normally strengthen Leadership and Community Impact.
+
+These are functional allocation rules, not rigid keyword categories. Use professional judgment based on the substance of the authorized evidence.
+
+## Functional Allocation Priority Rule
+
+For each functional resume narrative, identify and rank the strongest 3–6 authorized professional episodes or accomplishments that directly demonstrate that professional function.
+
+Do not allocate evidence merely because it is technically related to the section.
+
+Allocate evidence according to what the candidate was doing professionally and what the evidence proves.
+
+Use this default functional logic:
+
+- Consulting:
+  - Actual consulting, contract, client, or private-sector engagement evidence.
+  - Current civilian work should take priority when strong evidence exists.
+  - Do not fill this section with internal military or volunteer evidence merely because the capability is transferable.
+
+- IT Operations Manager:
+  - End-to-end IT ownership.
+  - Multi-site operations.
+  - People leadership and performance management.
+  - Security/compliance accountability.
+  - Vendor governance.
+  - Budget and cost responsibility.
+  - Service resilience.
+  - Enterprise operating-model leadership.
+
+- IT Infrastructure / Service Operations Manager:
+  - Help desk and service desk.
+  - Incident and escalation management.
+  - Endpoint lifecycle and provisioning.
+  - Monitoring and observability.
+  - SLA/KPI governance.
+  - Infrastructure health.
+  - ITSM process improvement.
+  - Operational reporting.
+  - Service stabilization and continuity.
+
+- Technical Project Manager:
+  - Enterprise modernization.
+  - Cloud or collaboration migration.
+  - Transformation recovery.
+  - Audit-control modernization.
+  - Identity transformation.
+  - Cross-functional project delivery.
+  - Scrum or Agile delivery leadership.
+  - Stakeholder coordination.
+  - Executive project communication.
+  - Organizational adoption and change management.
+  - Workflow and automation transformation.
+  - Program stabilization, transition, and handoff.
+
+- Leadership and Community Impact:
+  - Volunteer leadership development.
+  - Coaching and mentoring.
+  - Curriculum design.
+  - Instructor development.
+  - Executive education.
+  - Scalable organizational learning.
+  - Capability-building beyond positional authority.
+
+For each narrative, explicitly identify the strongest accomplishment candidates, not only the source episode names or broad capability categories.
+
+Preserve the meaningful facts that make each accomplishment strong, including where available:
+
+- Quantified results.
+- Scale.
+- Candidate ownership.
+- Technical or organizational complexity.
+- Business or operational impact.
+- Distinctive outcome.
+
+Prefer:
+
+"Technical Project Manager anchors:
+1. Enterprise identity/audit modernization — approximately 273,000 personnel, 13 direct audit-target systems, seven-member Scrum team, approximately three-month delivery.
+2. Azure/Microsoft 365 modernization — recovered three prior unsuccessful attempts; approximately 276 TB/4,000 users initially, replicated to approximately 600 TB/5,000 users.
+3. Power Platform adoption transformation — approximately 14% to approximately 97% adoption."
+
+Over:
+
+"Use identity, cloud, and automation evidence."
+
+When several accomplishments fit a narrative, rank them by:
+
+1. Functional fit.
+2. Quantified impact.
+3. Candidate ownership.
+4. Organizational or technical scale.
+5. Target relevance.
+6. Differentiation.
+7. Non-redundancy.
+
+The Writer should receive a prioritized evidence set for each narrative rather than having to rediscover which accomplishments are strongest.
+
+## Functional Placement Principle
+
+Professional episodes remain factually tied to their true source provenance in the evidence corpus.
+
+Resume placement is a separate presentation decision.
+
+Evidence may be allocated to the resume section whose professional function it best demonstrates even when the underlying episode occurred during another chronological assignment.
+
+The resume section is therefore a functional career narrative, not a literal ledger of every event that occurred between the dates printed beside that section.
+
+Functional placement is permitted when it improves professional coherence and accurately represents the candidate's demonstrated capability.
+
+Functional placement must not:
+
+- Change the factual nature of the work.
+- Invent a different employer for the underlying episode.
+- Invent a different client.
+- Invent a historical title.
+- Inflate ownership, authority, scope, or outcome.
+- Combine separate episodes into one fabricated event.
+- State or imply a false date for a specific accomplishment.
+- Turn volunteer work into paid employment.
+- Turn consulting work into internal employment.
+- Transfer target-employer context into candidate history.
+
+When evidence from multiple episodes is allocated to one functional narrative, preserve each fact's ownership, scope, technologies, outcomes, and limitations.
+
+Do not rewrite multiple independent episodes as though they were one single project or one single operating environment.
+
+## Functional Narrative Guidance
+
+For each of the five resume narratives, give the Writer a concise but substantive brief explaining:
+
+- What that section is meant to prove.
+- Which episodes should anchor it.
+- Which results are strongest.
+- Which evidence should be used to avoid generic filler.
+- Which evidence should not be used there because another section can tell that story more coherently.
+
+The Writer should receive enough guidance that placement is a limited composition choice rather than a fresh analytical problem.
+
+## Presentation Strategy
+
+After functional allocation, explain how the five narratives should work together as one resume.
+
+Address:
+
+- Which narrative should dominate for the target role.
+- Which narrative should establish current civilian/private-sector credibility.
+- Which narrative should demonstrate enterprise management.
+- Which narrative should demonstrate operational execution.
+- Which narrative should demonstrate transformation and project delivery.
+- Which narrative should demonstrate leadership beyond positional authority.
+- How to minimize redundancy across the five sections.
+- Which high-value evidence should be reserved for one section rather than repeated.
+
+This is functional narrative guidance, not machine lookup metadata.
+
+Do not assign artificial resume-section IDs.
+
+The Writer owns final wording and bullet selection within the Analyst's functional allocation.
+
+## Candidate Differentiators
+
+Identify the evidence-backed characteristics that distinguish the candidate from other qualified candidates.
+
+Examples may include:
+
+- Unusual organizational scale.
+- Strong combination of technical and managerial capability.
+- Quantified transformation results.
+- Rare platform experience.
+- Cross-functional leadership.
+- Strong security/compliance depth.
+- Business-facing operational leadership.
+- Recent commercial/private-sector experience.
+- Demonstrated capability across multiple adjacent disciplines.
+
+Differentiators must come from candidate evidence.
+
+Do not simply repeat employer preferences.
+
+## Skills and Capabilities to Surface
+
+Identify the most important candidate skills, platforms, methods, and professional capabilities that the Writer should make visible.
+
+Prioritize capabilities that are both:
+
+- materially relevant to the target job, and
+- strongly supported by authorized evidence.
+
+Include technical, operational, leadership, governance, compliance, project, or service-management capabilities where appropriate.
+
+Avoid keyword stuffing.
+
+Do not include a skill solely because it appears in the job posting.
+
+## Certifications to Surface
+
+Identify authorized earned certifications relevant to the target.
+
+Preserve official credential names.
+
+Do not convert:
+
+- coursework,
+- planned certifications,
+- expired or uncertain credentials,
+- general familiarity,
+
+into earned credentials.
+
+## Claim Boundaries
+
+Explicitly identify important statements the Writer must not overstate.
+
+For each important boundary, explain:
+
+- What the evidence safely supports.
+- What stronger interpretation would be unsafe.
+- Why.
+
+Examples:
+
+Safe:
+
+"Supported HIPAA-governed services and owned IT compliance readiness for a medical unit."
+
+Unsafe:
+
+"Led commercial healthcare IT operations."
+
+Safe:
+
+"Led a production AI-assisted service capability."
+
+Unsafe:
+
+"Deployed a specific enterprise product to production if the evidence describes a different platform or pilot."
+
+Safe:
+
+"Approximately 3,000 users."
+
+Unsafe:
+
+"Exactly 3,000 users."
+
+Preserve distinctions such as:
+
+- Approximate versus exact.
+- Shared versus sole ownership.
+- Governance versus implementation.
+- Pilot versus production.
+- Familiarity versus expertise.
+- Limited versus enterprise-wide scope.
+- Healthcare-support versus direct commercial healthcare employment.
+
+## Target Context Must Not Become Candidate History
+
+Employer context and candidate context are separate.
+
+Target-employer vocabulary may be used to describe employer demand and to explain transferability.
+
+It must not be used to redefine the candidate's professional history, professional identity, functional narratives, or Writer guidance unless independently supported by authorized candidate evidence.
+
+The target employer's:
+
+- Industry.
+- Customer type.
+- Clinic model.
+- Organizational structure.
+- Site type.
+- Cloud strategy.
+- Regulatory environment.
+- Business terminology.
+
+must not be transferred into candidate history merely because candidate evidence is relevant or transferable.
+
+This restriction applies not only to factual claims but also to descriptive framing.
+
+For example:
+
+Allowed:
+
+"The candidate's multi-site IT leadership transfers strongly to the employer's distributed clinic environment."
+
+Allowed:
+
+"The candidate has HIPAA-governed IT compliance experience supporting a medical unit, which is relevant to the employer's healthcare environment."
+
+Not allowed unless independently supported by authorized evidence:
+
+"The candidate led IT across distributed clinics."
+
+Not allowed unless independently supported by authorized evidence:
+
+"Healthcare IT leader."
+
+Not allowed unless independently supported by authorized evidence:
+
+"Led cloud-first healthcare-regulated IT operations."
+
+Not allowed unless independently supported by authorized evidence:
+
+"Managed corporate and clinic technology environments."
+
+Target-context vocabulary must not appear in:
+
+- The candidate's professional identity.
+- The professional narrative.
+- Functional narrative descriptions.
+- Recommended Writer identity framing.
+- Suggested resume-summary framing.
+- Candidate-history descriptions.
+
+unless the EvidenceAuthorization independently establishes that context as candidate history.
+
+If the candidate has adjacent or transferable evidence, describe the evidence accurately and explain transferability separately.
+
+Examples:
+
+Safe candidate history:
+
+"Led multi-site IT operations across eight sites."
+
+Safe comparison:
+
+"This multi-site operating model transfers strongly to Sono Bello's distributed clinic environment."
+
+Unsafe synthesis:
+
+"Led multi-site healthcare clinic IT operations."
+
+This rule is absolute.
+
+## Material Gaps
+
+Identify only gaps significant enough to affect candidacy or resume positioning.
+
+Do not treat missing documentation as a capability gap when the underlying capability is established.
+
+Distinguish between:
+
+- Genuine capability gap.
+- Partial evidence.
+- Context difference.
+- Limited proficiency.
+- Unverified detail.
+- Missing but non-material information.
+
+Do not manufacture weaknesses merely to make the analysis appear balanced.
+
+## Unsupported Capabilities
+
+If a target requirement lacks authorized support:
+
+- State that clearly.
+- Do not infer capability from adjacent evidence.
+- Do not ask the Writer to hide the gap with wording.
+- Do not turn the employer's desired capability into a candidate skill.
+
+## Recommended Writer Guidance
+
+Conclude with a clear strategic brief for the Writer.
+
+Explain:
+
+- The professional identity the resume should communicate.
+- The strongest leadership theme.
+- The strongest technical and operational themes.
+- The most important recent evidence.
+- The strongest accomplishments to prioritize.
+- Which target requirements deserve the most visible evidence.
+- Which differentiators should be surfaced.
+- Which capabilities should remain secondary.
+- What claims or contextual interpretations must be avoided.
+- What overall narrative should emerge from the resume.
+- How the strongest authorized episodes should be distributed across the five functional resume narratives.
+- Which evidence should anchor Consulting, IT Operations Management, Service/Infrastructure Operations, Technical Project Management, and Leadership/Community Impact.
+- The ranked 3–6 strongest accomplishment candidates for each functional narrative when sufficient evidence exists.
+- The meaningful metrics, scope, ownership, and outcomes the Writer should preserve rather than generalize away.
+- Which high-value accomplishments should be reserved for one narrative to avoid duplication.
+- Which target-context phrases must not be used as candidate identity or candidate history.
+
+Do not write final resume sentences or bullets.
+
+## Eligibility and Logistics Exclusion
+
+Do not evaluate or mention:
+
+- Current location.
+- Relocation.
+- On-site, hybrid, or remote availability.
+- Required office days.
+- Work authorization.
+- Sponsorship.
+- Compensation.
+- Travel availability.
+- Start date.
+- Scheduling.
+- Application acknowledgements.
+
+These matters are outside the professional evidence workflow.
+
+## Final Review
+
+Before returning the `CandidateJobAnalysis`, verify that:
+
+- Every material target requirement has been considered.
+- The analysis uses only authorized candidate evidence.
+- Strong evidence retains meaningful scope and results.
+- Candidate ownership is accurately represented.
+- Target context has not contaminated candidate history.
+- Complementary evidence has been recognized without being overstated.
+- Strongest evidence is clearly distinguished from weaker evidence.
+- Candidate differentiators are evidence-backed.
+- Claim boundaries are explicit.
+- Material gaps are honestly represented.
+- Writer guidance is substantive and actionable.
+- No artificial record IDs or lookup metadata are included unless required by the schema.
+- Functional narrative allocation is explicit and actionable without introducing unnecessary lookup bookkeeping.
+- Each functional narrative contains a prioritized set of strongest accomplishment candidates rather than only broad capability categories.
+- Strong metrics and distinctive outcomes have been preserved in the Writer guidance.
+- Actual consulting evidence is prioritized for the Consulting narrative when available.
+- Service-delivery evidence is prioritized for the Service/Infrastructure narrative.
+- Transformation and project-delivery evidence is prioritized for the Technical Project Manager narrative.
+- Target-employer industry, clinic, customer, or operating-context language has not been converted into candidate identity or candidate history.
+- No resume content has been written.
+- No eligibility or logistical considerations appear.
+
+## Output
+
+Return only one schema-conformant:
+
+`CandidateJobAnalysis`
+
+The substantive output should be a dense, clearly organized Writer-ready analysis that preserves the full quality of the authorized evidence and gives the Writer enough context to produce a compelling, truthful resume without rediscovering candidate evidence.
